@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallary-Planets</title>
+  <script src="../JAVA SCRIPT/blackhole.js" defer></script>
+  <link rel="stylesheet" href="../CSS/blackhole.css">
+  <link rel="stylesheet" href="../CSS/navbar.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary of Blackhole</h1>
+        <input class="b" id="left" type="button" value="<" onclick="dec()">
+        <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="../HTML/StudentoftheGalaxy.html"><li class="mli">Home</li></a>
+            <a href="../HTML/INFO.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Objects
+                <ul id="sublist">
+                    <a href="../HTML/Planets.html"><li class="sli">Planets</li></a>
+                    <a href="../HTML/stars.html"><li class="sli">Stars</li></a>
+                    <a href="../HTML/blackhole.html"><li class="sli">Blackhole</li></a>
+                    <a href="../HTML/Asteroids.html"><li class="sli">Astroids</li></a>
+                    <a href="../HTML/satellite.html"><li class="sli">Satellite</li></a>
+                </ul>
+            </li>
+            <a href="../index.html"><li class="mli">Logout</li></a>
+        </ul>
+    </div>
+    <div id="gallaryImages">
+        <img class="a" onclick="openImg(1 ,'Stellar','A stellar black hole (or stellar-mass black hole) is a black hole formed by the gravitational collapse of a star.[1] They have masses ranging from about 5 to several tens of solar masses.[2] The process is observed as a hypernova explosion[3] or as a gamma ray burst.[3] These black holes are also referred to as collapsars.')">
+        <img class="a" onclick="openImg(2,'Intermediate-mass','An intermediate-mass black hole (IMBH) is a class of black hole with mass in the range 102–105 solar masses: significantly more than stellar black holes but less than the 105–109 solar mass supermassive black holes.[2][3] Several IMBH candidate objects have been discovered in our galaxy and others nearby, based on indirect gas cloud velocity and accretion disk spectra observations of various evidentiary strength.')">
+        <img class="a" onclick="openImg(3,'Supermassive','A supermassive black hole (SMBH or sometimes SBH)[a] is the largest type of black hole, with its mass being on the order of hundreds of thousands, or millions to billions of times the mass of the Sun (M☉). Black holes are a class of astronomical objects that have undergone gravitational collapse, leaving behind spheroidal regions of space from which nothing can escape, not even light. Observational evidence indicates that almost every large galaxy has a supermassive black hole at its center.')">
+        <img class="a" onclick="openImg(4,'Miniature','Micro black holes, also called mini black holes or quantum mechanical black holes, are hypothetical tiny (<1 M☉) black holes, for which quantum mechanical effects play an important role.[1] The concept that black holes may exist that are smaller than stellar mass was introduced in 1971 by Stephen Hawking.[2]')">
+    </div>
+    <div id="subWindow">
+        <h1 id="close" onclick="closeImg()">X</h1>
+        <img id="subWindowImg" src="../Asste/image/blackhole/1.jpg">
+        <h1 id="imageHeading">Heading</h1>
+        <p id="imgpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, eum?</p>
+    </div>
+</body>
+</html>

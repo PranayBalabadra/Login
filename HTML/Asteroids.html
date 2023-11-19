@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallary-Planets</title>
+  <script src="../JAVA SCRIPT/asteroids.js" defer></script>
+  <link rel="stylesheet" href="../CSS/asteroids.css">
+  <link rel="stylesheet" href="../CSS/navbar.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary of Asteroids</h1>
+        <input class="b" id="left" type="button" value="<" onclick="dec()">
+        <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="../HTML/StudentoftheGalaxy.html"><li class="mli">Home</li></a>
+            <a href="../HTML/INFO.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Objects
+                <ul id="sublist">
+                    <a href="../HTML/Planets.html"><li class="sli">Planets</li></a>
+                    <a href="../HTML/stars.html"><li class="sli">Stars</li></a>
+                    <a href="../HTML/blackhole.html"><li class="sli">Blackhole</li></a>
+                    <a href="../HTML/Asteroids.html"><li class="sli">Astroids</li></a>
+                    <a href="../HTML/satellite.html"><li class="sli">Satellite</li></a>
+                </ul>
+            </li>
+            <a href="../index.html"><li class="mli">Logout</li></a>
+        </ul>
+    </div>
+    <div id="gallaryImages">
+        <img class="a" onclick="openImg(1 ,'Chondrite','A chondrite /kɒndrait/ is a stony (non-metallic) meteorite that has not been modified, by either melting or differentiation of the parent body.[a][1] They are formed when various types of dust and small grains in the early Solar System accreted to form primitive asteroids. Some such bodies that are captured in the planets gravity well become the most common type of meteorite by (whether quickly, or after many orbits) arriving on a trajectory toward the planets surface. Estimates for their contribution to the total meteorite population vary between 85.7%[2] and 86.2%.[3]')">
+        <img class="a" onclick="openImg(2,'Iron-Meteorite','Iron meteorites, also known as siderites, or ferrous meteorites, are a type of meteorite that consist overwhelmingly of an iron–nickel alloy known as meteoric iron that usually consists of two mineral phases: kamacite and taenite. Most iron meteorites originate from cores of planetesimals,[2] with the exception of the IIE iron meteorite group[3]')">
+        <img class="a" onclick="openImg(3,'Achondrite','An achondrite[1] is a stony meteorite that does not contain chondrules.[2][3] It consists of material similar to terrestrial basalts or plutonic rocks and has been differentiated and reprocessed to a lesser or greater degree due to melting and recrystallization on or within meteorite parent bodies.[4][5] As a result, achondrites have distinct textures and mineralogies indicative of igneous processes.[6]')">
+    </div>
+    <div id="subWindow">
+        <h1 id="close" onclick="closeImg()">X</h1>
+        <img id="subWindowImg" src="../Asste/image/asteroids/1.jpg">
+        <h1 id="imageHeading">Heading</h1>
+        <p id="imgpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, eum?</p>
+    </div>
+</body>
+</html>
